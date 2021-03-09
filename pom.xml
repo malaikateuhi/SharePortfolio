@@ -4,7 +4,7 @@
     <groupId>fr.ut1.ipm.forge</groupId>
     <artifactId>SharePortfolio</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>jar</packaging> s
     <name>${project.groupId}:${project.artifactID}</name>
     <description>This library ... </description>
     <url>https://github.com/malaikateuhi/SharePortfolio</url>
