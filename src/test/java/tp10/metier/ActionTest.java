@@ -13,12 +13,71 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author mlk
  */
 public class ActionTest {
-    
-    public ActionTest() {
+
+    /**
+     * Test for constructor.
+     */
+    public void actionTestNullParameter() {
+        
     }
 
-    @org.junit.jupiter.api.Test
-    public void testSomeMethod() {
+    /**
+     * Test .
+     */
+    public void actionTestInvalidParameter() {
+    }
+
+    /**
+     * Test getter nom.
+     */
+    public final void testGetNom() {
+        String actionName = "actionName";
+        //Action action = new Action(actionName);
+        //assertSame(actionName, action.getNom());
     }
     
+    /**
+     * Test
+     */
+    @org.junit.jupiter.api.Test
+    public void testTrueEquals() {
+        Action action = new ActionSimple("actionTest");
+        Object obj = action;
+        
+        boolean result = action.equals(obj);
+        
+        assertSame(true, result);
+        
+    }
+    
+    /**
+     * Test
+     */
+    @org.junit.jupiter.api.Test
+    public void testHashCode() {
+        
+    }
+    
+    /**
+     * Test
+     */
+    @org.junit.jupiter.api.Test
+    public void testToString() {
+        
+    }
+
+    @org.junit.Test
+    public void testValeur() {
+    }
+
+    public class ActionImpl extends Action {
+
+        public ActionImpl() {
+            super("");
+        }
+
+        public float valeur(Jour j) {
+            return 0.0F;
+        }
+    }
 }
