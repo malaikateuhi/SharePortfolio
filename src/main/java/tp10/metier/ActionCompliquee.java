@@ -42,6 +42,11 @@ public class ActionCompliquee extends Action {
         this.tblComposition.put(as, new Proportion(pourcentage));
     }
     
+    /**
+     *
+     * @return
+     */
+    @Override
     public String toString() {
         return this.getNom() +"=>" + this.tblComposition.toString(); 
     }
