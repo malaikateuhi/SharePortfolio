@@ -17,14 +17,19 @@ public class ActionSimple extends Action {
     
     // Table de hachage contenant les cours indexés par des jours
     private HashMap<Jour, Cours> tblCours;
-    
+
     // Constructeur cohérent avec le constructeur parent
     public ActionSimple(String nom) {
         super(nom); // c'est d'abord 1 action !
         this.tblCours = new HashMap<Jour, Cours>();
     }
-    
-    public void enrgCours(Jour j, float px) {
+
+    /**
+     * Register the value of an action for a given day.
+     * @param j the given day
+     * @param px the value of the action
+     */
+    public final void enrgCours(final Jour j, final float px) {
         /* création d'un objet Cours associé au prix
          *    puis ajout dans la table en indexant par le jour
          */        
